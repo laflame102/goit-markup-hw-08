@@ -1,0 +1,77 @@
+.our-team {
+    background-color: var(--bckgrd-color-second);
+}
+
+.our-team_heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--black-color);
+
+    margin-bottom: 50px;
+}
+
+.team-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.description__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--black-color);
+    margin-bottom: 10px;
+}
+
+.description__position {
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.team-menu__theme {
+    background-color: var(--white-color);
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.description {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media-menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    color: var(--media-icons);
+    border-radius: 50%;
+    background-color: var(--white-color);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            background-color: var(--color-links);
+            color: var(--white-color);
+        }
+}
+
+.social-media-menu__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
