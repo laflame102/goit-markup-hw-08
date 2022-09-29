@@ -2,6 +2,13 @@
     padding-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+    .occupation {
+        display: none;
+    }
+}
+
+
 .occupation-menu {
     display: flex;
     gap: 30px;
@@ -46,4 +53,10 @@
     .occupation-menu__item:hover & {
             transform: translateY(0%);
         }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .occupation {
+        display: none;
+    }
 }

@@ -98,6 +98,11 @@
     color: var(--text-color);
 }
 
+@media screen and (min-width: 768px) {
+    .checkbox-text {
+        font-size: 12px;
+    }
+}
 
 .checkbox-border {
     width: 16px;

@@ -25,6 +25,11 @@
         <li><a class="page-navigation__item link" href="#">Контакти</a></li>
     </ul>
 </nav>
+<button type="button" class="burger js-open-menu">
+    <svg class="burger-icon">
+        <use href="./images/sprite.svg#icon-burger-menu"></use>
+    </svg>
+</button>
 <ul class="header-contacts__menu list">
     <li>
         <a class="address-header link" href="mailto:info@devstudio.com">
@@ -42,7 +47,40 @@
     </li>
 </ul>
         </div>
- 
+ <div class="mobile-menu js-menu-container">
+    <div class="container mobile-menu__container">
+        <div class="nav-container">
+<button class="mobile-menu__button js-close-menu" >
+    <svg class="mobile-menu__close-icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+</button>
+<ul class="nav-menu list">
+    <li class="nav-menu__item"><a href="./index.html" class="nav-menu__link link current">Студія</a></li>
+    <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link link">Портфоліо</a></li>
+    <li class="nav-menu__item"><a href="" class="nav-menu__link link">Контакти</a></li>
+</ul>
+<ul>
+        </div>
+       
+          <div class="contacts-container">
+            <ul class="contacts-menu list">
+                <li class="contacts-menu__item"><a href="tel:+380961111111" class="contacts-menu__tel link">+38 096 111 11 11</a>
+                </li>
+                <li class="contacts-menu__item"><a href="mailto:info@devstudio.com"
+                        class="contacts-menu__email link">info@devstudio.com</a></li>
+            </ul>
+            </ul>
+            <ul class="mobile-social-media-menu list">
+                <li class="mobile-social-media-menu__item"><a href="" class="mobile-social-media-menu__link link">Instagram</a></li>
+                <li class="mobile-social-media-menu__item"><a href="" class="mobile-social-media-menu__link link">Twitter</a></li>
+                <li class="mobile-social-media-menu__item"><a href="" class="mobile-social-media-menu__link link">Facebook</a></li>
+                <li class="mobile-social-media-menu__item"><a href="" class="mobile-social-media-menu__link link">LinkedIn</a></li>     
+            </ul>
+            </div>
+          </div>
+    </div>
+ </div>
     </header>
 <main>
         <section class="hero">
@@ -121,7 +159,12 @@
 <h2 class="our-team_heading">Наша команда</h2>
 <ul class="team-menu list">
     <li class="team-menu__theme">
-        <img src="./images/our-professionals1.jpg" alt="Ігор Дем'яненко" width="270">
+        <picture>
+            <source srcset="./images/mobile/igor@1xmob.jpg 1x, ./images/mobile/igor@2xmob.jpg 2x" media="(max-width: 767px)">
+            <source media="(min-width: 768px)" srcset="./images/tablet/imgigor@1xtab.jpg 1x, ./images/tablet/imgigor@2xtab.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="./images/desktop/imgigor@1x.jpg 1x, ./images/desktop/imgigor@2x.jpg 2x">
+        </picture>
+        <img src="./images/our-professionals1.jpg" alt="Ігор Дем'яненко" >
         <div class="description">
 <h3 class="description__name">Ігор Дем'яненко</h3>
 <p lang="en" class="description__position">Product Designer</p>
@@ -161,7 +204,13 @@
         </div> 
     </li>
     <li class="team-menu__theme">
-        <img src="./images/our-professionals2.jpg" alt="Ольга Рєпіна" width="270">
+<picture>
+    <source srcset="./images/mobile/olga@1xmob.jpg 1x, ./images/mobile/olga@2xmob.jpg 2x" media="(max-width: 767px)">
+    <source media="(min-width: 768px)"
+        srcset="./images/tablet/imgolga@1xtab.jpg 1x, ./images/tablet/imgolga@2xtab.jpg 2x">
+    <source media="(min-width: 1200px)" srcset="./images/desktop/imgolga@1x.jpg 1x, ./images/desktop/imgolga@2x.jpg 2x">
+</picture>
+        <img src="./images/our-professionals2.jpg" alt="Ольга Рєпіна" >
         <div class="description">
 <h3 class="description__name">Ольга Рєпіна</h3>
 <p lang="en" class="description__position">Frontend Developer</p>
@@ -201,7 +250,13 @@
         </div>
     </li>
     <li class="team-menu__theme">
-        <img src="./images/our-professionals3.jpg" alt="Микола Тарасов" width="270">
+        <picture>
+            <source srcset="./images/mobilmihailokola@1xmob.jpg 1x, ./images/mobilmihailokola@2xmob.jpg 2x" media="(max-width: 767px)">
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/imihailokola@1xtab.jpg 1x, ./images/tablet/imihailokola@2xtab.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="./images/desktop/imihailokola@1x.jpg 1x, ./images/desktop/imihailokola@2x.jpg 2x">
+        </picture>
+        <img src="./images/our-professionals3.jpg" alt="Микола Тарасов">
         <div class="description">
 <h3 class="description__name">Микола Тарасов</h3>
 <p lang="en" class="description__position">Marketing</p>
@@ -241,7 +296,13 @@
         </div> 
     </li>
     <li class="team-menu__theme">
-        <img src="./images/our-professionals4.jpg" alt="Михайло Єрмаков" width="270">
+        <picture>
+            <source srcset="./images/mobile/mihailo@1xmob.jpg 1x, ./images/mobile/mihailo@2xmob.jpg 2x" media="(max-width: 767px)">
+            <source media="(min-width: 768px)"
+                srcset="./images/tablet/imgmihailo@1xtab.jpg 1x, ./images/tablet/imgmihailo@2xtab.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="./images/desktop/imgmihailo@1x.jpg 1x, ./images/desktop/imgmihailo@2x.jpg 2x">
+        </picture>
+        <img src="./images/our-professionals4.jpg" alt="Михайло Єрмаков">
         <div class="description">
                 <h3 class="description__name">Михайло Єрмаков</h3>
                 <p lang="en" class="description__position">UI Designer</p>
@@ -283,6 +344,7 @@
 </ul>
             </div>
         </section>
+
         <section class="section">
             <div class="container">
             <h2 class="clients-title">Постійні клієнти</h2>
@@ -341,6 +403,7 @@
 
 </main>
 
+
 <footer class="footer">
     <div class="container whole-footer">
         <div class="footer-addresses">
@@ -397,8 +460,9 @@
 </div>
 <div class="footer-form">
     <p class="footer-form-title">Підпишіться на розсилку</p>
+    <div class="mailing-list-wrapper">
     <form class="footer-form-menu">
-        <div class="mailing-list-wrapper">
+      
 <label>
     <input class="footer-form-input" type="email" placeholder="E-mail" name="user_mailing_list_email">
 </label>
@@ -465,14 +529,14 @@
                 <svg class="checkbox-icon-check">
                     <use href="./images/sprite.svg#icon-check"></use>
                 </svg>
-                <span class="checkbox-text">Погоджуюся з розсилкою та приймаю&nbsp</span>
-                <a href="" class="checkbox-policy-link">Умови договору</a>
+                <span class="checkbox-text">Погоджуюся з розсилкою та приймаю&nbsp<a href="" class="checkbox-policy-link">Умови договору</a></span>
             </label>
             <button class="modal-form-button" type="submit">Відправити</button>
         </form>
     </div>
 </div>
 
+<script src="./js/menu.js"></script>
  <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -2,6 +2,12 @@
     margin-left: auto;
 }
 
+@media screen and (max-width: 767px) {
+    .footer-form {
+        margin-left: 0;
+    }
+}
+
 
 .footer-form-title {
     font-weight: 700;
@@ -12,7 +18,13 @@
     margin-bottom: 20px;
 }
 
-.mailing-list-wrapper {
+@media screen and (max-width: 767px) {
+    .footer-form-title {
+text-align: center;
+    }
+}
+
+.footer-form-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +49,27 @@
                     line-height: 1.25;
                     color: rgba(255, 255, 255, 0.6);
                 }
+}
+
+@media screen and (max-width: 767px) {
+    .footer-form-input {
+        margin-bottom: 20px;
+        margin-right: 0;
+     width: 100%;
+  
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-form-input {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-form-input {
+        margin-bottom: 0;
+    }
 }
 
 .footer-form-button {
