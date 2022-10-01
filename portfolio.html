@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -27,6 +26,11 @@
                 <li><a class="page-navigation__item link" href="#">Контакти</a></li>
             </ul>
         </nav>
+        <button type="button" class="burger js-open-menu">
+            <svg class="burger-icon">
+                <use href="./images/sprite.svg#icon-burger-menu"></use>
+            </svg>
+        </button>
         <ul class="header-contacts__menu list">
             <li>
                 <a class="address-header link" href="mailto:info@devstudio.com">
@@ -44,7 +48,46 @@
             </li>
         </ul>
     </div>
+    <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+            <div class="nav-container">
+                <button class="mobile-menu__button js-close-menu">
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="nav-menu list">
+                    <li class="nav-menu__item"><a href="./index.html" class="nav-menu__link link">Студія</a>
+                    </li>
+                    <li class="nav-menu__item"><a href="./portfolio.html" class="nav-menu__link link current">Портфоліо</a></li>
+                    <li class="nav-menu__item"><a href="" class="nav-menu__link link">Контакти</a></li>
+                </ul>
+                <ul>
+            </div>
 
+            <div class="contacts-container">
+                <ul class="contacts-menu list">
+                    <li class="contacts-menu__item"><a href="tel:+380961111111" class="contacts-menu__tel link">+38 096
+                            111 11 11</a>
+                    </li>
+                    <li class="contacts-menu__item"><a href="mailto:info@devstudio.com"
+                            class="contacts-menu__email link">info@devstudio.com</a></li>
+                </ul>
+                </ul>
+                <ul class="mobile-social-media-menu list">
+                    <li class="mobile-social-media-menu__item"><a href=""
+                            class="mobile-social-media-menu__link link">Instagram</a></li>
+                    <li class="mobile-social-media-menu__item"><a href=""
+                            class="mobile-social-media-menu__link link">Twitter</a></li>
+                    <li class="mobile-social-media-menu__item"><a href=""
+                            class="mobile-social-media-menu__link link">Facebook</a></li>
+                    <li class="mobile-social-media-menu__item"><a href=""
+                            class="mobile-social-media-menu__link link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
 </header>
 
 <main>
@@ -52,7 +95,7 @@
     <div class="container">
 <h1 class="visually-hidden">Наші послуги</h1>
 <ul class="button-menu list">
-    <li><button type="button" class="main-button">Усі</button></li>
+    <li><button type="button" class="secondary-button">Усі</button></li>
     <li><button type="button" class="secondary-button">Веб-сайти</button></li>
     <li><button type="button" class="secondary-button">Додатки</button></li>
     <li><button type="button" class="secondary-button">Дизайн</button></li>
@@ -64,7 +107,12 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-<img src="./images/tehnokryak1.jpg" alt="Технокряк" width="370">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/mobile/tehno@1x.jpg 1x, ./images/mobile/tehno@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/tablet/img@1xtehno.jpg 1x, ./images/tablet/img@2xtehno.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xtehno.jpg 1x, ./images/desktop/img@2xtehno.jpg 2x">
+                    <img src="./images/tehnokryak1.jpg" alt="Технокряк">
+                </picture>
 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
 вичерпні відомості про компанію чи приватну особу.</p>
 </div>
@@ -78,7 +126,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/neworlean-goldenstar2.jpg" alt="Постер Новий Орлеан проти Голден Стар" width="370">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/mobile/nba@1x.jpg 1x, ./images/mobile/nba@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/tablet/img@1xnba.jpg 1x, ./images/tablet/img@2xnba.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xnba.jpg 1x, ./images/desktop/img@2xnba.jpg 2x">
+                    <img src="./images/neworlean-goldenstar2.jpg" alt="Постер Новий Орлеан проти Голден Стар">
+                </picture>
+               
                 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -94,7 +148,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/seafood3.jpg" alt="Ресторан морська їжа" width="370">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/mobile/seafood@1x.jpg 1x, ./images/mobile/seafood@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/tablet/img@1xseafood.jpg 1x, ./images/tablet/img@2xseafood.jpg 2x">
+                    <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xseafood.jpg 1x, ./images/desktop/img@2xseafood.jpg 2x">
+                    <img src="./images/seafood3.jpg" alt="Ресторан морська їжа">
+                </picture>
+              
                 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -110,7 +170,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/prime4.jpg" alt="Проєкт прайм" width="370">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./images/mobile/prime@1x.jpg 1x, ./images/mobile/prime@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/tablet/img@1xprime.jpg 1x, ./images/tablet/img@2xprime.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xprime.jpg 1x, ./images/desktop/img@2xprime.jpg 2x">
+                    <img src="./images/prime4.jpg" alt="Проєкт прайм">
+                </picture>
+               
                 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -126,7 +192,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/boxes5.jpg" alt="Проєкт коробки" width="370">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xboxes.jpg 1x, ./images/desktop/img@2xboxes.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/tablet/img@1xboxes.jpg 1x, ./images/tablet/img@2xboxes.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/mobile/boxes@1x.jpg 1x, ./images/mobile/boxes@2x.jpg 2x">
+                    <img src="./images/boxes5.jpg" alt="Проєкт коробки">
+                </picture>
+               
                 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -142,7 +214,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/inspiration6.jpg" alt="Натхнення немає кордонів" width="370">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xinspiration.jpg 1x, ./images/desktop/img@2xinspiration.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/tablet/img@1xinspiration.jpg 1x, ./images/tablet/img@2xinspiration.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/mobile/inspiration@1x.jpg 1x, ./images/mobile/inspiration@2x.jpg 2x">
+                    <img src="./images/inspiration6.jpg" alt="Натхнення немає кордонів">
+                </picture>
+              
                 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -158,7 +236,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/limited-edition7.jpg" alt="Видання лімітована колекція">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xlimited.jpg 1x, ./images/desktop/img@2xlimited.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./images/tablet/img@1xlimited.jpg 1x, ./images/tablet/img@2xlimited.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/mobile/limited@1x.jpg 1x, ./images/mobile/limited@2x.jpg 2x">
+                    <img src="./images/limited-edition7.jpg" alt="Видання лімітована колекція">
+                </picture>
+                
                 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -174,7 +258,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/lab8.jpg" alt="Проєкт лаб" width="370">
+                <picture>
+                                        <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xlab.jpg 1x, ./images/desktop/img@2xlab.jpg 2x">
+                                        <source media="(min-width: 768px)" srcset="./images/tablet/img@1xlab.jpg 1x, ./images/tablet/img@2xlab.jpg 2x">
+                    <source media="(max-width: 767px)" srcset="./images/mobile/lab@1x.jpg 1x, ./images/mobile/lab@2x.jpg 2x">
+                    <img src="./images/lab8.jpg" alt="Проєкт лаб">
+                </picture>
+               
 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
     відвідувачу отримати
     вичерпні відомості про компанію чи приватну особу.</p>
@@ -190,7 +280,13 @@
     <li class="results-item">
         <a href="" class="results-card link">
             <div class="results-card-photo-wrapper">
-                <img src="./images/growing-bussines9.jpg" alt="Розвиваючий бізнес" width="370">
+                <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desktop/img@1xbusiness.jpg 1x, ./images/desktop/img@2xbusiness.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/tablet/img@1xbusiness.jpg 1x, ./images/tablet/img@2xbusiness.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/mobile/business@1x.jpg 1x, ./images/mobile/business@2x.jpg 2x">
+                    <img src="./images/growing-bussines9.jpg" alt="Розвиваючий бізнес" >
+                </picture>
+              
                 <p class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -262,25 +358,28 @@
                 </li>
             </ul>
         </div>
-
         <div class="footer-form">
             <p class="footer-form-title">Підпишіться на розсилку</p>
-            <form class="footer-form-menu">
-                <div class="mailing-list-wrapper">
+            <div class="mailing-list-wrapper">
+                <form class="footer-form-menu">
+
                     <label>
-                        <input class="footer-form-input" type="email" placeholder="E-mail" name="user_mailing_list_email">
+                        <input class="footer-form-input" type="email" placeholder="E-mail"
+                            name="user_mailing_list_email">
                     </label>
                     <button class="footer-form-button" type="submit">Підписатися
                         <svg class="form-button-icon-send">
                             <use href="./images/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
-        
+            </div>
+
             </form>
         </div>
-        
+
     </div>
 </footer>
+
+<script src="./js/menu.js"></script>
     </body>
     </html>
