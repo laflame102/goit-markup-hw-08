@@ -27,9 +27,21 @@ text-align: center;
 .footer-form-menu {
     display: flex;
     justify-content: center;
-    align-items: center;
+
+    // align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+    .footer-form-menu {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-form-menu {
+       display: block;
+    }
+}
 
 .footer-form-input {
     width: 358px;
@@ -60,9 +72,10 @@ text-align: center;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer-form-input {
         margin-bottom: 20px;
+        width: 450px;
     }
 }
 
